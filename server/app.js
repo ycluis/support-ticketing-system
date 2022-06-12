@@ -12,8 +12,13 @@ const morgan = require("morgan");
 const colors = require("colors");
 const path = require("path");
 
+const errorHandler = require("./middleware/errorHandlerMiddleware");
+
 const app = express();
 app.use(cors());
 app.use(morgan("combined"));
+
+// API routes
+app.use(errorHandler);
 
 module.exports = app;
