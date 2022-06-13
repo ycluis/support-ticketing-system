@@ -19,6 +19,7 @@ app.use(cors());
 app.use(morgan("combined"));
 
 // API routes
+app.use("/api/v1", require("./routes/apiRouter"));
 app.use(errorHandler);
 
 module.exports = app;
