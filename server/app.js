@@ -17,6 +17,7 @@ const errorHandler = require("./middleware/errorHandlerMiddleware");
 const app = express();
 app.use(cors());
 app.use(morgan("combined"));
+app.use(express.json());
 
 // API routes
 app.use("/api/v1", require("./routes/apiRouter"));
