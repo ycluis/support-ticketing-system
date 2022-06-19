@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "62aee8baed130a568b5a6aa3",
+    "name": "Jordana Candelaria Lukić",
+    "email": "gagoba1567@qqhow.com",
+    "address": "112 Middle Rd #08-03",
+    "status": "active",
+    "contact": "62531025"
+  },
+  {
+    "_id": "62aeefa039985818a437c4d8",
+    "name": "Brian Agrippina Green",
+    "email": "ollie2@hotmail.com",
+    "address": "Far East Plaza, 14 Scotts Road, #02-44/45",
+    "status": "active",
+    "contact": "62946599"
+  },
+  {
+    "_id": "62aeefaf39985818a437c4da",
+    "name": "Isagani Margreet Levitt",
+    "email": "amelia_emard47@yahoo.com",
+    "address": "Blk 3013, 03-2134 Bedok North Ave 4, Bedok Industrial Park E (S)",
+    "status": "inactive",
+    "contact": "62381066"
+  },
+  {
+    "_id": "62aeef7f39985818a437c4d4",
+    "name": "Koralo Nereus Greenspan",
+    "email": "sage_koch@gmail.com",
+    "address": "BLK 12 HOUGANG AVENUE 7, #01-489",
+    "status": "inactive",
+    "contact": "62420993"
+  },
+  {
+    "_id": "62aeef9439985818a437c4d6",
+    "name": "Anjali Judith Yu",
+    "email": "garland_abbott@gmail.com",
+    "address": "6 KAKI BUKIT AVE 1 03-03",
+    "status": "active",
+    "contact": "67411934"
+  }
+]
