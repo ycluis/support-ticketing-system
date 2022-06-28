@@ -28,8 +28,7 @@ const createNewCompany = asyncHandler(async (req, res, next) => {
 
   res.status(201).json({
     success: true,
-    message: "New company created successfully!",
-    data: company,
+    message: `${company.name} company created!`,
   });
 });
 
