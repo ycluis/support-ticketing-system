@@ -1,13 +1,24 @@
 const UserModel = require("../models/user/userModel");
+const companyModel = require("../models/company/companyModel");
 const asyncHandler = require("express-async-handler");
 
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password, role, status, contact, isAdmin } = req.body;
+  const { name, company, email, password, role, status, contact, isAdmin } =
+    req.body;
+
+  // Check if company valid
+  const existingCompany = await companyModel.find({ name: company });
+
+  if (!existingCompany || existingCompany.length < 1) {
+    res.status(404);
+    throw Error(`Company with name ${req.body.company} does not exist`);
+  }
 
   // Create user
   const user = await UserModel.create({
     name,
     email,
+    company: existingCompany[0]._id,
     password,
     role,
     status,

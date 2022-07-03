@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "62c18f9a4e926f3b10abb199",
+    "name": "John Doe",
+    "company": "62aee8baed130a568b5a6aa3",
+    "email": "johndoe@example.com",
+    "password": "Abcd1234!",
+    "status": "active",
+    "role": "user",
+    "contact": "62531025",
+    "isAdmin": "false"
+  }
+]

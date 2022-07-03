@@ -11,7 +11,7 @@ const schemas = {
   }),
   userRegisterPOST: Joi.object({
     name: Joi.string().required(),
-    // company: Joi.string().required(),
+    company: Joi.string().required(),
     email: Joi.string().email().required(),
     password: new passwordComplexity({
       min: 8,
