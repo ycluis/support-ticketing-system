@@ -24,6 +24,13 @@ const createNewCompany = asyncHandler(async (req, res, next) => {
   //* Add user to req.body
   // req.body.user = req.user.id;
 
+  const existingCompany = await companyModel.find({ name: req.body.name });
+
+  if (existingCompany) {
+    res.status(404);
+    throw Error(`Company with name ${req.body.name} already exist`);
+  }
+
   const company = await companyModel.create(req.body);
 
   res.status(201).json({
